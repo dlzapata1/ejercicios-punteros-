@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero;
+    int *ptr;
+
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+
+    ptr = &numero;
+
+    *ptr = *ptr + 10;
+
+    cout << "Nuevo valor: " << numero << endl;
+
+    return 0;
+}
