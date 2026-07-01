@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero = 25;
+    int *ptr = &numero;
+
+    cout << "Valor de la variable: " << numero << endl;
+    cout << "Valor usando el puntero: " << *ptr << endl;
+    cout << "Direccion de memoria: " << ptr << endl;
+
+    return 0;
+}
