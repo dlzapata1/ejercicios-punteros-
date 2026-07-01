@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void intercambiar(int *a, int *b) {
+    int aux = *a;
+    *a = *b;
+    *b = aux;
+}
+
+int main() {
+    int x, y;
+
+    cout << "Ingrese el primer numero: ";
+    cin >> x;
+
+    cout << "Ingrese el segundo numero: ";
+    cin >> y;
+
+    intercambiar(&x, &y);
+
+    cout << "Primer numero: " << x << endl;
+    cout << "Segundo numero: " << y << endl;
+
+    return 0;
+}
