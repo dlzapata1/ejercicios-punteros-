@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+    int *ptr1, *ptr2;
+
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    if (*ptr1 > *ptr2) {
+        cout << "El numero mayor es: " << *ptr1 << endl;
+    } else if (*ptr2 > *ptr1) {
+        cout << "El numero mayor es: " << *ptr2 << endl;
+    } else {
+        cout << "Los numeros son iguales." << endl;
+    }
+
+    return 0;
+}
